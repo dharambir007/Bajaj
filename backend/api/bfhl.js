@@ -165,7 +165,7 @@ export default async function handler(req, res) {
       const root = roots.length > 0 ? roots.sort()[0] : comp_nodes[0];
       const tree = build_tree(root);
       const depth = get_depth(tree);
-      hierarchies.push({ root, tree, depth, has_cycle: false });
+      hierarchies.push({ root, tree, depth });
     }
   }
 
@@ -190,7 +190,7 @@ export default async function handler(req, res) {
   };
 
   return res.status(200).json({
-    user_id: "Dharambir_Singh_27032005",
+    user_id: "dharambirsingh_27032005",
     email_id: "dharambir1186.be23@chitkarauniversity.edu.in",
     college_roll_number: "2311981186",
     hierarchies,
