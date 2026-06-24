@@ -1,0 +1,9 @@
+{
+  "name": "chitkara-bfhl-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "dev:local": "node server.js"
+  }
+}
